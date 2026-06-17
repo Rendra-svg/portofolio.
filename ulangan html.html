@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya | Biodata & Karya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        utama: '#2563EB',
+                        gelap: '#1F2937',
+                        abu: '#6B7280',
+                        muda: '#F3F4F6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .kontainer {
+                @apply w-full max-w-4xl mx-auto px-4;
+            }
+            .bayangan {
+               box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            }
+            .transisi {
+                @apply transition-all duration-300 ease-in-out;
+            }
+            .garis-bawah {
+                @apply w-20 h-1 bg-utama rounded mb-6;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-muda text-gelap">
+<nav class="hidden md:flex items-center justify-center space-x-8 pt-4 border-t">
+    <a href="ulangan html.html" class="font-medium hover:text-utama transisi">HOME</a>
+    <a href="image/senyum roblok.jpg" class="font-medium hover:text-utama transisi">FOTO</a>
+    <a href="image/brawhalla.mp4" class="font-medium hover:text-utama transisi">VIDEO</a>
+    <a href="belajar membuat tabel.html" class="font-medium hover:text-utama transisi">WEBSITE</a>
+</nav>
+    <!-- Header / Bagian Profil Utama -->
+    <header class="bg-white py-16 bayangan">
+        <div class="kontainer">
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-8">
+                <!-- Foto Profil -->
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-utama/20 bayangan">
+                    <img src="image/5.jpeg" alt="Foto Profil" class="w-full h-full object-cover">
+			   </div>
+
+                <!-- Nama & Judul Singkat -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-[32px] md:text-[40px] font-bold text-gelap">PORTOFOLIO SAYA</h1>
+					<h1 class="text-[32px] md:text-[40px] font-bold text-gelap">RENDRA PARTOMUAN PASARIBU</h1>
+                    <p class="text-lg text-abu mt-2">Pengembang Web | Desainer Grafis | Freelancer</p>
+                    <p class="mt-4 max-w-xl">
+                        Saya adalah seorang pelajar desain komunikasi visual yang bersekolah di SMKN 1 CIBINONG
+                    </p>
+
+                    <!-- Tautan Sosial Media / Kontak -->
+                    <div class="flex justify-center md:justify-start gap-4 mt-6">
+                        <a href="https://wa.me/6289516448531" target="_blank" class="w-10 h-10 rounded-full bg-utama/10 text-utama hover:bg-utama hover:text-white flex items-center justify-center text-lg transisi">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                        <a href=https://www.instagram.com/blck.rxndz?igsh=MnZjY3Bkemlobmdl" target="_blank" class="w-10 h-10 rounded-full bg-utama/10 text-utama hover:bg-utama hover:text-white flex items-center justify-center text-lg transisi">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        
+                        <a href="mailto:megarendrapasaribu123@gmail.com" class="w-10 h-10 rounded-full bg-utama/10 text-utama hover:bg-utama hover:text-white flex items-center justify-center text-lg transisi">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigasi Utama -->
+            <nav class="hidden md:flex items-center justify-center space-x-8 pt-4 border-t">
+                <a href="#biodata" class="font-medium hover:text-utama transisi">Biodata Diri</a>
+                <a href="#tentang" class="font-medium hover:text-utama transisi">Tentang Kami</a>
+                <a href="#keahlian" class="font-medium hover:text-utama transisi">Keahlian</a>
+                <a href="#proyek" class="font-medium hover:text-utama transisi">Projek dan Karya</a>
+            </nav>
+
+            <!-- Tombol Menu Mobile -->
+            <div class="flex justify-center md:hidden mt-4">
+                <button id="tombolMenu" class="text-gelap text-xl p-2">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="menuMobile" class="md:hidden h-0 overflow-hidden transisi bg-white mt-2 rounded-lg bayangan">
+                <div class="px-4 py-3 flex flex-col space-y-3">
+                    <a href="#biodata" class="font-medium py-1 hover:text-utama transisi">Biodata Diri</a>
+                    <a href="#tentang" class="font-medium py-1 hover:text-utama transisi">Tentang Kami</a>
+                    <a href="#keahlian" class="font-medium py-1 hover:text-utama transisi">Keahlian</a>
+                    <a href="#proyek" class="font-medium py-1 hover:text-utama transisi">Projek dan Karya</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="kontainer">
+            <!-- Bagian Biodata Diri -->
+            <section id="biodata" class="bg-white p-8 rounded-xl bayangan mb-12">
+                <h2 class="text-[24px] font-bold">Biodata Diri</h2>
+                <div class="garis-bawah"></div>
+
+                <div class="grid md:grid-cols-2 gap-y-4 text-base">
+                    <div class="flex">
+                        <span class="w-32 font-medium text-abu">Nama Lengkap</span>
+                        <span>: RENDRA PARTOMUAN PASARIBU</span>
+                    </div>
+                    <div class="flex">
+                        <span class="w-32 font-medium text-abu">Tanggal Lahir</span>
+                        <span>: 17 Mei 2010</span>
+                    </div>
+                    <div class="flex">
+                        <span class="w-32 font-medium text-abu">Jenis Kelamin</span>
+                        <span>: Laki-laki</span>
+                    </div>
+                    <div class="flex">
+                        <span class="w-32 font-medium text-abu">Pendidikan</span>
+                        <span>: D4 / TEKNIK INFORMATIKA</span>
+                    </div>
+                    <div class="flex md:col-span-2">
+                        <span class="w-32 font-medium text-abu">Alamat</span>
+                        <span>: CIBINONG KAB. BOGOR</span>
+                    </div>
+                    <div class="flex md:col-span-2">
+                        <span class="w-32 font-medium text-abu">Minat</span>
+                        <span>: Pemrograman, Desain UI/UX, Fotografi</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian Tentang Kami -->
+            <section id="tentang" class="bg-white p-8 rounded-xl bayangan mb-12">
+                <h2 class="text-[24px] font-bold">Tentang Saya</h2>
+                <div class="garis-bawah"></div>
+                <p class="text-base leading-relaxed">
+                    Saya adalah lulusan Teknik Informatika yang memiliki minat besar dalam pengembangan 
+                </p>
+            </section>
+
+            <!-- Bagian Keahlian / Skill -->
+            <section id="keahlian" class="bg-white p-8 rounded-xl bayangan mb-12">
+                <h2 class="text-[24px] font-bold">Keahlian</h2>
+                <div class="garis-bawah"></div>
+				<p class="mt-4 max-w-xl">
+                        Saya adalah seorang profesional yang berfokus pada 
+                    </p>
+               <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-utama/10 text-utama rounded-lg font-medium">HTML & CSS</span>
+                    <span class="px-4 py-2 bg-utama/10 text-utama rounded-lg font-medium">JavaScript</span>
+                    <span class="px-4 py-2 bg-utama/10 text-utama rounded-lg font-medium">Tailwind CSS</span>
+                    <span class="px-4 py-2 bg-utama/10 text-utama rounded-lg font-medium">PHP</span>
+                    <span class="px-4 py-2 bg-utama/10 text-utama rounded-lg font-medium">Figma</span>
+                    <span class="px-4 py-2 bg-utama/10 text-utama rounded-lg font-medium">Desain Grafis</span>
+                    <span class="px-4 py-2 bg-utama/10 text-utama rounded-lg font-medium">Manajemen Proyek</span>
+                </div>
+            </section>
+
+            <!-- Bagian Proyek / Karya -->
+            <section id="proyek" class="bg-white p-8 rounded-xl bayangan">
+                <h2 class="text-[24px] font-bold">Proyek & Karya</h2>
+                <div class="garis-bawah"></div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Kartu Proyek 1 -->
+                    <div class="border rounded-lg overflow-hidden transisi hover:bayangan hover:-translate-y-1">
+                        <img src="image/1.jpg" alt="Proyek 1" class="w-full h-48 object-cover"><br>
+						 <img src="image/2.jpg" alt="Proyek 1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg">Menggambar</h3>
+                            <p class="text-abu text-sm mt-1 mb-3">Membangun toko online lengkap dengan sistem pembayaran dan manajemen produk.</p>
+                            <a href="#" class="text-utama font-medium hover:underline">Lihat Detail →</a>
+                        </div>
+                    </div>
+
+                    <!-- Kartu Proyek 2 -->
+                    <div class="border rounded-lg overflow-hidden transisi hover:bayangan hover:-translate-y-1">
+                        <img src="image/3.jpg" alt="Proyek 2" class="w-full h-48 object-cover"><br>
+<img src="image/4.jpg" alt="Proyek 2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg">Dimensi</h3>
+                            <p class="text-abu text-sm mt-1 mb-3">Aplikasi pencatatan keuangan pribadi dengan fitur grafik dan laporan bulanan.</p>
+                            <a href="#" class="text-utama font-medium hover:underline">Lihat Detail →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gelap text-white py-8 text-center">
+        <div class="kontainer">
+            <p>&copy; 2026 DKV. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Script untuk Menu Mobile -->
+    <script>
+        const tombolMenu = document.getElementById('tombolMenu');
+        const menuMobile = document.getElementById('menuMobile');
+        let menuTerbuka = false;
+
+        tombolMenu.addEventListener('click', () => {
+            if (!menuTerbuka) {
+                menuMobile.style.height = 'auto';
+                menuMobile.style.padding = '12px 0';
+            } else {
+                menuMobile.style.height = '0px';
+                menuMobile.style.padding = '0';
+            }
+            menuTerbuka = !menuTerbuka;
+        });
+
+        // Tutup menu setelah klik salah satu tautan
+        const tautanMenu = menuMobile.querySelectorAll('a');
+        tautanMenu.forEach(link => {
+            link.addEventListener('click', () => {
+                menuMobile.style.height = '0px';
+                menuMobile.style.padding = '0';
+                menuTerbuka = false;
+            });
+        });
+    </script>
+
+</body>
+</html>
